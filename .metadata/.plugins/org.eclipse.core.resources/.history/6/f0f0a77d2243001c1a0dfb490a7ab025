@@ -1,0 +1,5 @@
+package clarice_santos_questao04Fila;
+
+public interface FilaInt {
+
+}

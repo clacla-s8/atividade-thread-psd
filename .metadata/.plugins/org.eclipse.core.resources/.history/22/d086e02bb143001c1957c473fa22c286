@@ -1,0 +1,44 @@
+package clarice_santos_questao04Fila;
+
+import clarice_santos_questao03.Questao03Thread;
+
+public class FilaEstatica {
+
+	public static void main(String[] args) {
+		FilaInteiro fila = new FilaInteiro(10);
+		
+		
+		
+		
+		
+
+		
+		for (int i = 0; i < qthreads; i++) {
+
+			
+			FilaThread thread = new FilaThread();
+			
+
+			list.add(thread);
+		}
+
+		fila.enqueue(10);
+		fila.ExibirFila();
+
+		fila.dequeue();
+		fila.ExibirFila();
+
+		fila.enqueue(103);
+		fila.ExibirFila();
+		fila.enqueue(120);
+		fila.ExibirFila();
+		fila.enqueue(150);
+		fila.ExibirFila();
+		fila.dequeue(); // SAI O 103;
+		fila.enqueue(110);
+		fila.ExibirFila();
+		
+		
+	}
+
+}

@@ -1,0 +1,40 @@
+package view;
+
+import java.awt.Container;
+import java.awt.FlowLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class Questao01View extends JFrame {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public void telaProjeto() {
+
+		Container janela = getContentPane();
+		setLayout(new FlowLayout());
+		
+		JLabel labelValor = new JLabel("Digite os segundos para deixar a aplicação bloqueada: ");
+
+		JTextField campoValor = new JTextField(20);
+
+		JButton botaoConfirmar = new JButton("OK");
+		
+		labelValor.setBounds(50,40,100,20);
+		campoValor.setBounds(50,40,100,20);
+		botaoConfirmar.setBounds(30, 30, 30, 30);
+		janela.add(labelValor);
+		janela.add(campoValor);
+		janela.add(botaoConfirmar);
+		setSize(400, 250);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setVisible(true);
+	}
+
+}

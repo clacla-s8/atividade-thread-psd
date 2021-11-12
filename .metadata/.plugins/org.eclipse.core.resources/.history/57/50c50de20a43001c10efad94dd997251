@@ -1,0 +1,5 @@
+package clarice_santos_questao03;
+
+public class Questao03Thread implements Runnable{
+
+}

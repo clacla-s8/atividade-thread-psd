@@ -1,0 +1,59 @@
+package clarice_santos_questao03;
+
+import java.awt.Container;
+import java.awt.FlowLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class Questao03View extends JFrame {
+
+	
+private static final long serialVersionUID = 1L;
+
+	
+	JTextField campoQtThread;
+	JTextField campoLimiteContador;
+	JButton botaoConfirmar;
+	
+	JLabel labelImpressao;
+	
+	
+	public void telaProjeto() {
+
+		Container janela = getContentPane();
+		setLayout(new FlowLayout());
+
+		JLabel labelQtThread = new JLabel("Digite valor de N (numeros primos 1 a N): ");
+
+		campoQtThread = new JTextField(20);
+		
+		JLabel labelLimiteContador = new JLabel("Digite quantidade de threads: ");
+		campoLimiteContador = new JTextField(20);
+		
+		labelImpressao = new JLabel("");
+		botaoConfirmar = new JButton("OK");
+
+		labelQtThread.setBounds(50, 40, 100, 20);
+		labelLimiteContador.setBounds(50, 40, 100, 20);	
+		campoQtThread.setBounds(50, 40, 100, 20);
+		campoLimiteContador.setBounds(50, 40, 100, 20);
+		botaoConfirmar.setBounds(50, 50, 100, 50);
+		
+		
+		janela.add(labelQtThread);
+		janela.add(campoQtThread);
+		janela.add(labelLimiteContador);
+		janela.add(campoLimiteContador);
+		janela.add(botaoConfirmar);
+		janela.add(labelImpressao);
+		
+		
+		setSize(350, 250);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setLocationRelativeTo(null);
+		setVisible(true);
+	}
+}

@@ -1,0 +1,12 @@
+package clarice_santos_questao04Fila;
+
+public class FilaThread implements Runnable{
+
+	
+	@Override
+	public void run() {
+		
+		
+	}
+
+}

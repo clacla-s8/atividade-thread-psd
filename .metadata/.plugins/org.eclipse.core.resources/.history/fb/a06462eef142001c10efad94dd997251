@@ -1,0 +1,52 @@
+package controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import view.Questao01View;
+import view.Questao02View;
+
+public class Questao02Thread implements Runnable {
+	private int inicioThread;
+	private int fimThread;
+
+	Questao02View questao02;
+	public Questao02Thread(int inicioThread, int fimThread) {
+		super();
+		this.inicioThread = inicioThread;
+		this.fimThread = fimThread;
+		new Thread(this).start();
+	}
+
+
+	@Override
+	public void run() {
+		
+		
+		List<Integer> numeros = new ArrayList<Integer>();
+
+		for(int i = 0; i <= 20; i++){
+			numeros.add(i);
+		}
+
+		                int contador;
+				int numero = 0;
+				for (Integer i : numeros) {
+					contador = 0;
+
+				       for (int u = 1; u <= i; u++) {
+						if (i % u == 0) {
+							contador++;
+							numero = u;
+						}
+					}
+					
+					if (contador == 2) {
+						System.out.println("O Número: " + numero + " é primo e seus primos são: 1 e "+ numero);  
+					}		
+				}
+	}
+	
+	
+
+}

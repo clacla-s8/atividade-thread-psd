@@ -1,0 +1,9 @@
+package view;
+
+public class Questao02View {
+
+	public Questao02View() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

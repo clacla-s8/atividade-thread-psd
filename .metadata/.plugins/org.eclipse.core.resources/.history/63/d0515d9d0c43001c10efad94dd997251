@@ -1,0 +1,16 @@
+package clarice_santos_questao03;
+
+public class Questao03Thread implements Runnable {
+	private int limiteContador;
+
+	public Questao03Thread(int limiteContador) {
+		super();
+		this.limiteContador = limiteContador;
+	}
+
+	@Override
+	public void run() {
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package main;
+
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+import controller.Questao02Controller;
+
+import view.Questao02View;
+
+public class PrincipalQuestao02 {
+
+	public static void main(String[] args) {
+//		Questao02View  q2= new Questao02View();
+//		q2.telaProjeto();
+		
+		//Questao02Controller q2Controler = new Questao02Controller(q2);
+		
+	
+		
+	}
+}

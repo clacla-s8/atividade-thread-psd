@@ -1,0 +1,23 @@
+package controller;
+
+public class Questao02Thread implements Runnable {
+	private int inicioThread;
+	private int fimThread;
+
+	
+	public Questao02Thread(int inicioThread, int fimThread) {
+		super();
+		this.inicioThread = inicioThread;
+		this.fimThread = fimThread;
+		new Thread(this).start();
+	}
+
+
+	@Override
+	public void run() {
+
+	}
+	
+	
+
+}

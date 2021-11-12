@@ -1,0 +1,25 @@
+package clarice_santos_questao04Fila;
+
+public class FilaThread implements Runnable{
+
+	FilaInteiro fila;
+	
+	
+	
+	public FilaThread(FilaInteiro fila) {
+		super();
+		this.fila = new FilaInteiro(10);
+		new Thread(this).start();
+	}
+
+
+
+	@Override
+	public void run() {
+		
+		
+		
+		
+	}
+
+}

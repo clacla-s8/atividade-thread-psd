@@ -1,0 +1,41 @@
+package controller;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JOptionPane;
+
+import view.Questao01View;
+
+public class Questao01Controller implements ActionListener {
+
+	Questao01View questao01;
+
+	public Questao01Controller(Questao01View questao01) {
+		super();
+		this.questao01 = questao01;
+		questao01.getBotaoConfirmar().addActionListener(this);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+
+		Object o = e.getSource();
+		
+		if(questao01.getBotaoConfirmar() == o) {
+			int valorInteiro = Integer.parseInt(questao01.getCampoValor().getText());
+			System.out.println(valorInteiro);
+			questao01.
+			try {
+				
+				Thread.sleep(valorInteiro*1000);
+				System.out.println("fim");
+			} catch (InterruptedException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+		}
+		
+	}
+
+}

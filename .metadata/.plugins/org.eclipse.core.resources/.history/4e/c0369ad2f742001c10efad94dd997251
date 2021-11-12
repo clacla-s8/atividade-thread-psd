@@ -1,0 +1,54 @@
+package controller;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.List;
+
+import view.Questao02View;
+
+public class Questao02Controller implements ActionListener {
+	Questao02View questao02;
+
+	public Questao02Controller(Questao02View questao02) {
+		super();
+		this.questao02 = questao02;
+		questao02.getBotaoConfirmar().addActionListener(this);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+
+		Object o = e.getSource();
+
+		if (questao02.getBotaoConfirmar() == o) {
+			int valorInteiroPrimo = Integer.parseInt(questao02.getCampoValor().getText());
+			int valorInteiroThread = Integer.parseInt(questao02.getCampoValorThread().getText());
+
+			int valorDividido = valorInteiroPrimo / valorInteiroThread;
+			List<Questao02Thread> list = new ArrayList<Questao02Thread>();
+			
+			for (int i = 1; i < valorInteiroThread; i++) {
+				new Questao02Thread(i, valorInteiroThread);
+				Questao02Thread t = new Questao02Thread(1, 7);
+				list.add(t);
+			}
+
+//			Questao02Thread t1 = new Questao02Thread(1, 7);
+//			Questao02Thread t2 = new Questao02Thread(7, 14);
+//			Questao02Thread t3 = new Questao02Thread(14, 20);
+//			
+//			try {
+//				Thread.sleep(3*1000);
+//			} catch (InterruptedException e1) {
+//				e1.printStackTrace();
+//			}
+//			
+//			System.out.println(t1.getInteiros());
+//			System.out.println(t2.getInteiros());
+//			System.out.println(t3.getInteiros());
+		}
+
+	}
+
+}

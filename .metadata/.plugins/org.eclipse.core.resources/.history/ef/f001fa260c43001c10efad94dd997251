@@ -1,0 +1,34 @@
+package clarice_santos_questao02;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Questao02Thread implements Runnable {
+	private int inicioThread;
+	private int fimThread;
+	private String inteiros;
+
+	public Questao02Thread(int inicioThread, int fimThread) {
+		super();
+		this.inicioThread = inicioThread;
+		this.fimThread = fimThread;
+		this.inteiros = "";
+		new Thread(this).start();
+	}
+
+	@Override
+	public void run() {
+
+		List<Integer> numeros = new ArrayList<Integer>();
+
+		
+
+	}
+
+	public String getInteiros() {
+		return inteiros;
+	}
+
+	
+
+}

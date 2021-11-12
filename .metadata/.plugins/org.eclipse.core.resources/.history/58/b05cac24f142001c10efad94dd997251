@@ -1,0 +1,13 @@
+package controller;
+
+public class Questao02Thread implements Runnable{
+
+	@Override
+	public void run() {
+		
+		
+	}
+
+	
+
+}

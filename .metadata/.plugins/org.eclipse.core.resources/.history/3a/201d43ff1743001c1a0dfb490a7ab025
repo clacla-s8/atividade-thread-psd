@@ -1,0 +1,15 @@
+package clarice_santos_questao04;
+
+
+
+public class Questao04Controller {
+	Questao04View questao04;
+
+	public Questao04Controller(Questao04View questao04) {
+		super();
+		this.questao04 = questao04;
+	}
+	
+	
+	
+}

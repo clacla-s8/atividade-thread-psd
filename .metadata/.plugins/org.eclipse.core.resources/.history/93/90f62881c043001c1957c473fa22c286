@@ -1,0 +1,22 @@
+package clarice_santos_questao05;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class BoundedBuffer {
+
+	private List<Integer> list;
+
+	public BoundedBuffer(int tamanhoArray) {
+		this.list = new ArrayList<Integer>(tamanhoArray);
+	}
+
+	public void put(int v) {
+
+	}
+
+	public int get() {
+		return list.get(list.size() - 1);
+	}
+
+}

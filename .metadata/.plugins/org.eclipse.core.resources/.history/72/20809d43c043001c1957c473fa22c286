@@ -1,0 +1,24 @@
+package clarice_santos_questao05;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class BoundedBuffer {
+
+	List<Integer> list;
+	int fim = 0;
+	
+
+	public BoundedBuffer() {
+		this.list = new ArrayList<Integer>();
+	}
+	
+	public void put(int v){
+		
+	}
+	
+	public int get() {
+		return list.get(0);
+	}
+
+}
