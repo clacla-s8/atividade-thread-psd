@@ -1,9 +1,0 @@
-package clarice_santos_questao03;
-
-public class Questao03View {
-
-	public Questao03View() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

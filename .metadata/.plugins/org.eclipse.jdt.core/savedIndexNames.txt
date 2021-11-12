@@ -1,9 +1,1 @@
-INDEX VERSION 1.131+C:\Users\user\Documents\atividade psd\.metadata\.plugins\org.eclipse.jdt.core
-2529427793.index
-1566322623.index
-4017943471.index
-1026693340.index
-3525106207.index
-2410677145.index
-231018059.index
-1614546447.index
+INDEX VERSION 1.131+C:\Users\user\Documents\atividade-thread-psd\.metadata\.plugins\org.eclipse.jdt.core

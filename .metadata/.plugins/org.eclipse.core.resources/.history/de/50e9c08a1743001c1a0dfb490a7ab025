@@ -1,7 +1,0 @@
-package clarice_santos_questao04;
-
-import javax.swing.JFrame;
-
-public class Questao04View extends JFrame{
-
-}

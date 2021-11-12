@@ -1,9 +1,0 @@
-package controller;
-
-public class Questao02Thread {
-
-	public Questao02Thread() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

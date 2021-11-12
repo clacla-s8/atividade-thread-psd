@@ -1,7 +1,0 @@
-package clarice_santos_questao03;
-
-public class Questao03Controller {
-Questao03View questao03;
-
-
-}

@@ -1,7 +1,0 @@
-package clarice_santos_questao04;
-
-import clarice_santos_questao03.Questao03View;
-
-public class Questao04Controller {
-	Questao04View questao04;
-}
